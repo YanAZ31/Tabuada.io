@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabuada.io | Matemática de forma mais ágil</title>
+    <!-- Ícone da página -->
+    <link rel="shortcut icon" href="assets/tabuada.io.png" type="image/x-icon">
+    <!-- Biblioteca de animações -->
+    <link rel="stylesheet" href="animate.css-main/animate.css">
+    <!-- Ícones -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+   
+</head>
+<body>
+    <header class="header">
+        <div class="menu container grid">
+           <div class="logo">
+                <img src="assets/tabuada.io.png" alt="Logomarca">
+           </div>
+           <nav>
+            <i class="fas fa-bars oculto" id="menu-mobile"></i>
+               <ul class="menu-itens animate__animated">
+                   <li><a href="#" class="tab">Home</a></li>
+                   <li><a href="#" class="tab">Exemplos</a></li>
+                   <li><a href="#" class="tab">Sobre o Dev</a></li>
+               </ul>
+           </nav>
+          
+        </div>
+        <main class="main active">
+            <div class="principal grid container">
+                 <div class="area-texto">
+                     <h2>Facilite seus cálculos</h2>
+                     <p>Tenha acesso rápido a tabuadas personalizadas</p>
+                     <a href="#" class="btn animate__heartBeat animate__infinite animate__slow animate__animated " id="btn">Começar a calcular</a>
+                 </div>
+                 <div class="conceito"></div>      
+            </div>    
+        </main>
+        <main class="main">
+            <div class="grid container duvidas">
+                <div class="conceitoExplicacao"></div>
+                <div class="explicacao">
+                    <h2>Ok, vamos lá</h2>
+                    <p>nessa aplicação possui um formulário com dois campos, sendo um deles obrigatório (o número) e outro opcional (o nome) caso não deseje se identificar.</p>
+                    <h3 class=" topic">Exemplos Até 10 <i class="fas fa-arrow-circle-right"></i></h3>
+                    <div class="math-exemples hide">
+                        <p>Esse é o cálculo mais simples, pois é o padrão da aplicação </p>
+                        <div class="exemple">
+                            <h4>Tabuada do 2</h4>
+                            <div class="tabuada-2">
+                                <h5>2 X 1 = 2</h5>
+                                <h5>2 X 2 = 4</h5>
+                                <h5>2 X 3 = 6</h5>
+                                <h5>2 X 4 = 8</h5>
+                                <h5>2 X 5 = 10</h5>
+                                <h5>2 X 6 = 12</h5>
+                                <h5>2 X 7 = 14</h5>
+                                <h5>2 X 8 = 16</h5>
+                                <h5>2 X 9 = 18</h5>
+                                <h5>2 X 10 = 20</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class=" topic">Multiplos acima de 10 <i class="fas fa-arrow-circle-right"></i></h3>
+                    <div class="math-exemples hide">
+                        <p> Para conseguir resultados acima do X 10, é necessário que o botão localizado na parte inferior direirto seja clicado, os resultados sempre aparecem de 10 em 10 e são infinitos. </p>
+                        <div class="exemple">
+                            <h4>Tabuada do 2</h4>
+                            <div class="tabuada-2">
+                                <h5>2 X 11 = 22</h5>
+                                <h5>2 X 12 = 24</h5>
+                                <h5>2 X 13 = 26</h5>
+                                <h5>2 X 14 = 28</h5>
+                                <h5>2 X 15 = 30</h5>
+                                <h5>2 X 16 = 32</h5>
+                                <h5>2 X 17 = 34</h5>
+                                <h5>2 X 18 = 36</h5>
+                                <h5>2 X 19 = 38</h5>
+                                <h5>2 X 20 = 40</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <main class="main container">
+            <div class="about-dev grid">
+                <div class="dev">
+                    <div>
+                        <img src="assets/yan.png" alt="">
+                        <h2>Yan Azevedo</h2>
+                        <h3>Desenvolvedor Front-End</h3>
+                        <h4><a href="https://github.com/YanAZ31" target="blank"><i class="fab fa-github"></i> YanAZ31</a></h4>
+                   </div>
+                </div>
+                <div class="dev-text">
+                    <h1>Sobre Mim</h1>
+                    <p>Sou formado como <b>técnico em informática</b> na Escola Técnica Sandra Silva e atualmente curso <b>Análise e Desenvolvimento de Sistemas </b> na Universidade Presbiteriana Mackenzie. Em meu tempo livre busco aprimorar meus conhecimento na língua inglesa, web design e responsividade.</p>
+                </div>
+            </div>
+        </main>
+        
+    </header>
+
+    <section class="modal grid animate__animated">
+        <div class="form">
+                <form action="" id="form">
+                    <input type="text" name="nome" placeholder=" Digite seu nome" id="inputName">
+                    <input type="text" name="numero" placeholder="Digite o número desejado" id="inputNumber" required>
+                    <input type="submit" value="Calcular" class="submit" >
+                </form> 
+        </div>
+        <div class="result">
+            <a href="#" id="close"><img src="assets/close.png" alt="fechar" srcset=""></a>
+            <div class="result-container">
+                <h2>Vamos fazer alguns cálculos !</h2>
+                <img src="assets/solve.svg" alt="resolvendo problemas matemáticos">
+                <p>parece que voce ainda não digitou nenhum número</p>
+            </div>
+        </div>
+        <div class="complete animate__animated hide" >
+            <a href="#" id="close"><img src="assets/close.png" alt="fechar" srcset=""></a>
+           <div class="complete-container">
+                <h2>Vamos lá, <i id="nome"></i></h2>
+                <h3>Tabuada de <i id="numero"></i></h3>
+                
+                <div class="tabuada animate__animated">
+                  
+                    <div>
+                    <h4><i id="numero">I</i></h4>
+                    <h4><i id="numero">I</i></h4>
+                    <h4><i id="numero">I</i></h4>
+                    <h4><i id="numero">I</i></h4>
+                    <h4><i id="numero">I</i></h4>
+                    <h4><i id="numero">I</i></h4>
+                    <h4><i id="numero">I</i></h4>
+                    <h4><i id="numero">I</i></h4>
+                    <h4><i id="numero">I</i></h4>
+                    <h4><i id="numero">I</i></h4>
+                   </div>
+                    <img src="assets/teacher.svg" alt="professor">
+                </div>
+               
+           </div>
+           <div class="maisResultados">
+            <i class="fas fa-plus-square"></i>
+            <p>Mais 10 resultados</p>
+        </div>
+        </div>
+    </section> 
+    <script src="js/modal.js"></script>
+    <script src="js/menu-mobile.js"></script>
+    <script src="js/tabuada.js"></script>
+    <script src="js/topics.js"></script>
+</body>
+</html>

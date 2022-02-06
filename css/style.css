@@ -1,0 +1,461 @@
+/*  Reset */
+*{
+    margin: 0px;
+    border: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    }
+    /* Variáveis */
+    :root {
+        --preto: #2F2E41;
+        --verde-fraco: #60D394 ;
+        --verde-medio:#21AA61 ;
+        --verde-forte:#122B1A ;
+    }
+
+    
+
+    .grid{
+        grid-template-columns: repeat(12,1fr);
+        display: grid;
+    }
+
+   nav ul{
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+            flex-grow: 1;
+            justify-content: flex-end;
+   }
+    nav ul li{
+        list-style: none;
+        
+    }
+
+    nav ul li a{
+                    text-decoration: none;
+                    font-size: 18px;
+                    font-weight: bold;
+                    color:var(--verde-fraco)
+    }
+
+    nav ul li a:hover{
+                        transition: 0.5s;
+                        color:var(--verde-forte)
+}
+
+
+
+    body{
+        font-family: "Segoe UI";
+     
+       
+        
+    }
+    .container{
+                max-width: 90%;
+                margin: 0 auto
+    }
+
+  
+
+    .menu img{
+                width: 44px;
+    }
+
+    .menu{
+            /* height: 150px;
+            border: solid 1px; */
+            align-content:center;
+            justify-content: center;
+            padding: 60px 0px
+            
+    }
+
+    .logo {
+            grid-column: 1/6;
+
+    }
+
+    nav{
+        grid-column:6/12;
+       
+    }
+
+    .area-texto{
+        grid-column: 1/6;
+        color: var(--preto);
+        justify-content: center;
+        align-self: center;
+
+    }
+
+    .conceito{
+        grid-column: 6/12;
+        background: url(../assets/math.svg);
+        background-position: right ;
+        background-size: contain;
+        background-repeat: no-repeat;
+        align-self:auto
+        /* background-color: violet; */
+      
+    }
+
+    .area-texto h2{
+        font-size: 30px;
+        font-weight: bold;
+        margin-bottom: 13px;
+        
+    }
+    .area-texto p{
+        font-size: 18px;
+        max-width: 300px;
+        margin-bottom: 11px;
+        
+    }
+
+    .principal{
+        height: 450px;
+        
+    }
+    .btn{
+            display: inline-block;
+            width: 350px;
+            background-color: var(--verde-fraco);
+            color: #fff;
+            text-decoration: none;
+            text-align: center;
+            font-size: 24px;
+            padding:12px;
+            font-weight: bold;
+    }
+
+    header{
+        background-image: url(../assets/pattern.svg);
+        background-size: 750px;
+    }
+
+    .form{
+        grid-column: span 6;
+        height: 100%;
+        background-color: var(--verde-medio);
+        padding: 20px 0px;
+       
+    
+       
+    }
+
+    .result{
+        grid-column: span 6;
+        background-color: #FFF;
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top:45%;
+        height: 100%;
+        
+    }
+    
+    input{
+            width: 70%;
+            padding: 10px;
+            border:  solid 1px #FFF;
+            margin-bottom: 18px;
+            display: inline-block;
+            background-color: var(--verde-medio);
+            color: #FFF;
+
+    }
+
+
+    input:placeholder-shown{
+        color:#FFF
+    }
+  
+    .btn:hover{
+        background-color: var(--verde-medio);
+        transition: 1s;
+     
+    }
+
+    
+
+    .submit{
+        max-width: 216px;
+        display: inline-block;
+        background-color: #FFF;
+        color: var(--preto);
+        font-weight: bold;
+    }
+    .submit:hover{
+        background-color: var(--verde-medio);
+        transition: 1s;
+        color: white;
+    }
+
+    .modal{
+        max-width: 700px;
+        border:  solid 1px;
+        position: absolute;
+        top: 10%;
+        left:20%;
+        opacity: 100%;
+        visibility: hidden;
+        height: 0;
+     
+    }
+    /* Estilizando place */
+    input::placeholder{
+        color: #FFF;
+    }
+
+    .result-container{
+                        display: flex;
+                        flex-direction: column;
+                        width: 100%;
+                        /* align-items: center; */
+                        padding: 20px 0px;
+                       
+    }
+
+    .result-container h2{
+                        color: var(--preto);
+                        font-size: 25px;
+                        max-width: 320px;
+                        font-weight: bold;
+                        text-align: center;
+                     
+    }
+
+    img .result-container{
+                        max-width: 100%;
+    }
+
+    .result-container p  {
+                        font-style: italic;
+                        padding: 0 10px
+    }
+
+    .opacity{
+        opacity: 25%;
+    }
+
+    .show-modal{
+        visibility: visible;
+        height: auto;
+    }
+
+    #close img {
+                width: 20px;
+    }
+
+#close{
+    display: block;
+    text-align: right;
+    padding: 5px 10px;
+}
+
+.fa-bars{
+    visibility: hidden;
+}
+
+.show-Menu{
+    visibility: visible;
+}
+
+.fa-bar:hover{
+    color:var(--verde-medio);
+    transition: 1s;
+}
+
+.hide{
+    visibility: hidden;
+    display: none;
+    height: 0px;
+}
+
+.complete-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+}
+
+.complete{
+    grid-column: span 6;
+    background-color: #FFF;
+    padding:  5px 10px;
+    
+   
+}
+
+#nome{
+    color: var(--verde-fraco);
+}
+
+#numero{
+        color: var(--verde-fraco);
+}
+
+.tabuada{
+    color: var(--verde-fraco);
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+}
+
+.tabuada img{
+    max-width: 70%;
+    padding: 5px 10px;
+}
+
+.maisResultados{
+        color: #fff;
+        background-color:var(--verde-medio);
+        text-align: center;
+        padding: 0;
+        margin: 0;
+        cursor: pointer;
+     
+}
+
+
+
+.maisResultados p{
+    display: block;
+}
+
+footer{
+    background-color: var(--verde-fraco );
+    color: #FFF;
+    padding: 20px;
+    text-align: center;
+    height: 100%;
+    display: block;
+    margin-bottom: 0;
+}
+
+.conceitoExplicacao{
+    grid-column: span 7;
+    background: url(../assets/explica.svg);
+    background-position:left ;
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    
+  
+}
+
+.explicacao{
+    grid-column: span 5;
+    color: var(--preto);
+    align-self: center;
+    
+ 
+
+}
+.explicacao p{
+    max-width: 450px;
+}
+
+main{
+    visibility: hidden;
+    height: 0;
+}
+.active{
+    visibility: visible;
+}
+
+.duvidas{
+            
+              gap: 10px;
+              height: 450px;
+
+}
+
+.math-exemples{
+   
+}
+
+.topic{
+    color:var(--verde-fraco);
+    cursor: pointer;    
+}
+.explicacao h4{
+    color: var(--verde-fraco);
+  
+}
+
+.explicacao h3{
+    margin: 20px 0px;
+}
+
+.explicacao .hide{
+    visibility: hidden;
+    height: 0px;
+}
+
+.dev{
+   grid-column: span 5;
+   background-color: var(--verde-fraco);
+   color: #fff;
+   text-align: center;
+   padding: 10px;
+
+}
+
+.dev-text{
+    grid-column: span 7;
+    color: var(--verde-fraco);
+    line-height: 38px;
+    width: 88%;
+    margin: 0 auto  
+}
+
+.about-dev{
+    gap: 10px;
+    height: 450px;
+  
+}
+
+.dev h4 a{
+    color: #FFF;
+    text-decoration: none;
+
+}
+
+.dev-text h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color:var(--verde-medio)
+}
+
+.dev-text b{
+    color: var(--verde-medio);
+}
+
+.about-dev img{
+                width: 200px;
+                border-radius: 50%;
+                margin-bottom: 15px;
+                border: dashed 5px #fff ;
+}
+
+.dev h2, h3, h4{
+        margin-bottom: 10px;
+}
+
+.dev h2, h3{
+    font-weight: normal;
+}
+
+.dev div{
+           margin: auto;
+           padding: 20px;
+
+}

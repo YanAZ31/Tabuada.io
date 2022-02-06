@@ -1,0 +1,9 @@
+palheta
+
+#60D394 (Verde Fraco)
+
+#21AA61 (Verde Intermediário)
+
+#122B1A (Verde Avançado)
+
+#2F2E41 (Preto)
